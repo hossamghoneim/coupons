@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "1083506218783",
+    "firebase_url": "https://couponati.firebaseio.com",
+    "project_id": "couponati",
+    "storage_bucket": "couponati.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083506218783:android:0f38c791bf93150e33422a",
+        "android_client_info": {
+          "package_name": "com.dokkar.coupons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083506218783-re68p726h51o2pb9637q49312famn3np.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dokkar.coupons",
+            "certificate_hash": "3f82742a2b76962d2ce56cb6c0002c1522a06542"
+          }
+        },
+        {
+          "client_id": "1083506218783-q297akuufptjeddlqhltv3gfjmmv5f88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsPExlc919vd8qW3IKKhG84tjuKdVQ04g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083506218783-q297akuufptjeddlqhltv3gfjmmv5f88.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1083506218783-knurttnn2joneojinu7q78i0lbge0dd2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dokkar.coupons"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083506218783:android:53eae146c4a6a4b433422a",
+        "android_client_info": {
+          "package_name": "com.example.coupons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083506218783-q297akuufptjeddlqhltv3gfjmmv5f88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsPExlc919vd8qW3IKKhG84tjuKdVQ04g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083506218783-q297akuufptjeddlqhltv3gfjmmv5f88.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1083506218783-knurttnn2joneojinu7q78i0lbge0dd2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dokkar.coupons"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083506218783:android:c2ceb123ddef701c33422a",
+        "android_client_info": {
+          "package_name": "com.reda_dokkar.coupons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083506218783-cuhsgv2141o2rggbgh0dqgcl58985b5g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reda_dokkar.coupons",
+            "certificate_hash": "3f82742a2b76962d2ce56cb6c0002c1522a06542"
+          }
+        },
+        {
+          "client_id": "1083506218783-q297akuufptjeddlqhltv3gfjmmv5f88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsPExlc919vd8qW3IKKhG84tjuKdVQ04g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083506218783-q297akuufptjeddlqhltv3gfjmmv5f88.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1083506218783-knurttnn2joneojinu7q78i0lbge0dd2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dokkar.coupons"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
