@@ -516,7 +516,7 @@ class CouponWidgetState extends State<CouponWidget> {
 
                     //copy button
                     Container(
-                      width: 0.28 * w_width,
+                      width: 0.30 * w_width,
                       height: 0.12 * w_width,
                       child: RaisedButton(
                           color: Colors.yellow,
