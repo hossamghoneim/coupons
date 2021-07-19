@@ -11,9 +11,13 @@ import '../../data/Helper.dart';
 
 class EditCoupon extends StatefulWidget {
   String couponID;
+  String couponCode;
+  String couponUrl;
 
-  EditCoupon(String couponID) {
+  EditCoupon(String couponID, String couponCode, String couponUrl) {
     this.couponID = couponID;
+    this.couponCode = couponCode;
+    this.couponUrl = couponUrl;
   }
 
   @override
@@ -106,9 +110,9 @@ class EditCouponState extends State<EditCoupon> {
                   cursorColor: Colors.black,
                   decoration: InputDecoration.collapsed(
                       border: InputBorder.none,
-                      hintText: mLocal.add_coupon_hint,
+                      hintText: widget.couponCode,
                       hintStyle: TextStyle(
-                          color: Colors.grey[400],
+                          color: Colors.black,
                           fontSize: 0.045 * width,
                           fontFamily: fontBold)),
                   onChanged: (value) {
@@ -138,9 +142,9 @@ class EditCouponState extends State<EditCoupon> {
                   cursorColor: Colors.black,
                   decoration: InputDecoration.collapsed(
                       border: InputBorder.none,
-                      hintText: mLocal.add_coupon_link_hint,
+                      hintText: widget.couponUrl,
                       hintStyle: TextStyle(
-                          color: Colors.grey[400],
+                          color: Colors.black,
                           fontSize: 0.045 * width,
                           fontFamily: fontBold)),
                   onChanged: (value) {
@@ -156,14 +160,7 @@ class EditCouponState extends State<EditCoupon> {
               ///////////////////////////Button///////////////////////////
               RawMaterialButton(
                 onPressed: () {
-                  print(coupon);
-                  if (coupon != "*" && couponLink != "*" && isURL(couponLink)) {
-                    editCoupon();
-                  } else {
-                    singleOptionAlert(context);
-                    print('coupon ->' + coupon);
-                    print('coupon link ->' + couponLink);
-                  }
+                  editCoupon();
                 },
                 elevation: 2.0,
                 fillColor: Colors.black,
@@ -197,13 +194,13 @@ class EditCouponState extends State<EditCoupon> {
   void editCoupon() async {
     NativeProgressHud.showWaitingWithText(mLocal.wait,
         backgroundColor: "#000000", textColor: "#ffffff");
-    print("couponIDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
-    print(widget.couponID);
+    // print("couponIDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
+    // print(widget.couponID);
     final ref = FirebaseDatabase.instance.reference();
 
     ref.child('coupons').child(widget.couponID).update({
-      'coupon': coupon,
-      'link': couponLink,
+      'coupon': coupon != "*" ? coupon : widget.couponCode,
+      'link': couponLink != "*" ? couponLink : widget.couponUrl,
     }).whenComplete(() {
       Future.delayed(const Duration(milliseconds: 500), () {
         NativeProgressHud.hideWaiting();

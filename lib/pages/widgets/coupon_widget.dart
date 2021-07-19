@@ -506,7 +506,8 @@ class CouponWidgetState extends State<CouponWidget> {
                                     PageTransition(
                                         type: PageTransitionType.rightToLeft,
                                         duration: Duration(milliseconds: 300),
-                                        child: EditCoupon(coupon.id)));
+                                        child: EditCoupon(coupon.id,
+                                            coupon.code, coupon.link)));
                               },
                             ))
                         : Text(""),
